@@ -1,0 +1,15 @@
+<p>Communicate with your coach :</p>
+
+<h1><%= @query %></h1>
+<!-- <h2><%= @answer %></h2> -->
+<%if @query.downcase == "i am going to work right now!"%>
+<%="Good."%>
+<%elsif @query.end_with?("?")%>
+<%="Silly question, get dressed and go to work!"%>
+<%elsif @query.end_with?("?")%>
+<%="Silly question, get dressed and go to work!"%>
+<%else%>
+<%="I dont care, get dressed and go to work!"%>
+<%end%>
+
+<%= link_to "Ask a new question", ask_path %>
